@@ -1,0 +1,39 @@
+.MMM-ImapFeed .mailtable {
+  font-size: 20px;
+  line-height: 20px;
+  border-spacing: 0px;
+}
+
+.MMM-ImapFeed .colfrom {
+  width: 1px;
+  padding-right: 8px;
+  text-align: left;
+  font-weight: 200;
+  white-space: nowrap;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: left;
+}
+
+.MMM-ImapFeed .colsubj {
+  white-space: nowrap;
+  font-size: 20px;
+  text-align: left;
+  overflow-x: hidden;
+}
+
+.MMM-ImapFeed .coldt {
+  width: 1px;
+  white-space: nowrap;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: right;
+}
+
+.MMM-ImapFeed .coltm { 
+  width: 1px;
+  white-space: nowrap;
+  font-weight: 300;
+  font-size: 20px;
+  text-align: right;
+}
