@@ -27,6 +27,11 @@ Add this entry to <MagicMirror root>/config/config.js, as entry in *modules: [* 
         header: "Gmail",
         position: "bottom_bar",
         config: {
+            imapAddress: "***<IMAP server address>***", //'imap.gmail.com',
+            imapPort: ***<IMAP server port>***, //993
+            tls: ***<true or false if encrypted>***, //true
+            tlsOptions: ***<other options, need to use option in comment below, for Gmail IMAP>***
+                // { servername: 'imap.gmail.com', }, //https://stackoverflow.com/questions/59633564/cannot-connect-to-gmail-using-imap
             username: "***<email address>***",
             password: "***<IMAP password>***",
             updateInterval: 5*60000,
