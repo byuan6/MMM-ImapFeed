@@ -36,9 +36,9 @@ Module.register("MMM-ImapFeed", {
 	},
 
 	// Define required scripts.
-	getScripts: function() {
-		return ["moment.js"];
-	},
+	//getScripts: function() {
+	//	return ["moment.js"];
+	//},
 
 	// Request node_helper to get json from url
 	getJson: function () {
@@ -140,13 +140,6 @@ Module.register("MMM-ImapFeed", {
 		var issueDt = moment(jsonObject.issued);
 
 		fromNode.append(document.createTextNode(jsonObject.author.name.substring(0, this.config.maxFromLength)));
-		//subjNode.append(document.createTextNode(jsonObject.title.substring(0, this.config.maxSubjectLength)));
-		//var synopsisNode = document.createElement("span");
-		//synopsisNode.classList.add("xsmall");
-		//synopsisNode.classList.add("light");
-		//synopsisNode.classList.add("dim");
-		//synopsisNode.classList.innerHTML = jsonObject.text;
-		//subjNode.append(synopsisNode);
 		subjNode.innerHTML = "<div style='max-width:580px;overflow-x:hidden'><span class='small bright'>" + jsonObject.title.substring(0, this.config.maxSubjectLength) + "</span>&nbsp;<span class='xsmall dim'>" +jsonObject.text+"</span></div>";
 
 		if (!issueDt.isSame(new Date(), "day")) {
@@ -167,8 +160,6 @@ Module.register("MMM-ImapFeed", {
 		tmNode.classList.add("coltm");
 		tmNode.classList.add("med");
 		tmNode.classList.add("dim");
-		
-		
 
 		row.append(fromNode);
 		row.append(subjNode);
