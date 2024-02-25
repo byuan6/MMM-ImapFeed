@@ -12,6 +12,8 @@ Displays e-mail retrieved from IMAP protocol
 
 ### Step 2: Enable your Google Account for IMAP
 
+You don't need Gmail, but if you are going to access your Gmail via IMAP, please read warning below.  Otherwise any IMAP e-mail can be accessed and displayed.
+
 > [!WARNING]
 > To enable IMAP for Google, you need to generate a different App password (than the one you use to login to Gmail), just for IMAP.  Same username is used in the configuration below.
 
