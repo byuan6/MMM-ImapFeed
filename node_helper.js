@@ -1,7 +1,4 @@
 var NodeHelper = require('node_helper');
-var inspect = require('inspect');
-var request = require('request');
-var xml2js = require('xml2js');
 var Imap = require('imap');
 const {simpleParser} = require('mailparser');
 
